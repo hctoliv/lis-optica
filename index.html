@@ -54,6 +54,7 @@
       <nav class="nav__links" id="menu" aria-label="Principal">
         <a href="#servicos">Serviços</a>
         <a href="#lis">A Lis</a>
+        <a href="#videos">Vídeos</a>
         <a href="#clientes">Clientes</a>
         <a href="#visite">Visite</a>
         <a class="nav__wpp-mobile" href="https://wa.me/message/CIMYWYLQR2UYL1" target="_blank" rel="noopener">Falar no WhatsApp</a>
@@ -113,8 +114,11 @@
         </header>
 
         <div class="bento">
-          <article class="card card--photo card--exam reveal">
-            <img src="img/exame-refrator.jpg" alt="Criança fazendo teste de grau no refrator durante exame de vista" width="340" height="270" loading="lazy">
+          <article class="card card--exam reveal">
+            <div class="polaroids" aria-hidden="false">
+              <figure class="polaroid"><img src="img/exame-autorrefrator.jpg" alt="Criança fazendo exame de refração no autorrefrator" width="335" height="270" loading="lazy"><figcaption>Exame de refração</figcaption></figure>
+              <figure class="polaroid"><img src="img/exame-refrator.jpg" alt="Criança fazendo teste de grau no refrator" width="340" height="270" loading="lazy"><figcaption>Teste de grau</figcaption></figure>
+            </div>
             <div class="card__body">
               <span class="card__num">01</span>
               <h3>Exame de vista</h3>
@@ -140,8 +144,8 @@
             <p>Menos reflexo, mais conforto. Faz diferença na tela, no volante à noite e no dia a dia.</p>
           </article>
 
-          <article class="card card--photo card--kids reveal">
-            <img src="img/crianca-armacao.jpg" alt="Menina sorrindo com sua nova armação rosa de óculos" width="324" height="285" loading="lazy">
+          <article class="card card--kids reveal">
+            <figure class="polaroid polaroid--tilt"><img src="img/crianca-armacao.jpg" alt="Menina sorrindo com sua nova armação rosa de óculos" width="324" height="285" loading="lazy"><figcaption>Armação nova!</figcaption></figure>
             <div class="card__body">
               <span class="card__num">05</span>
               <h3>Visão infantil</h3>
@@ -156,7 +160,11 @@
     <section class="section section--dark" id="lis">
       <div class="wrap about">
         <div class="about__photos reveal">
-          <img class="about__main" src="img/lis-loja.jpg" alt="Lis posando animada no corredor da loja, entre as vitrines de óculos" width="640" height="1020" loading="lazy">
+          <figure class="reel about__main">
+              <video src="video/lis-na-loja.mp4" poster="video/lis-na-loja.jpg" muted loop playsinline preload="none" aria-label="Lis dançando no corredor da loja, entre as vitrines de óculos"></video>
+              <button class="reel__sound" type="button" aria-label="Ligar o som" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="spk" d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/><path class="off" d="m16 9.5 5 5m0-5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="on" d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+              <figcaption>A Lis em casa</figcaption>
+            </figure>
           <img class="about__side" src="img/loja-corredor.jpg" alt="Corredor da Lis Óptica com vitrines de armações dos dois lados" width="800" height="852" loading="lazy">
         </div>
         <div class="about__copy">
@@ -173,6 +181,36 @@
       </div>
     </section>
 
+    <!-- VÍDEOS -->
+    <section class="section section--videos" id="videos">
+      <div class="wrap">
+        <header class="head head--split">
+          <div>
+            <p class="eyebrow">Na Lis é assim</p>
+            <h2>Dá o play e <em>vem conhecer a loja.</em></h2>
+          </div>
+          <a class="btn btn--line" href="https://www.instagram.com/lisoptica.oficial/reels/" target="_blank" rel="noopener">Mais vídeos no Instagram</a>
+        </header>
+        <div class="reels">
+          <figure class="reel ">
+              <video src="video/lis-provando.mp4" poster="video/lis-provando.jpg" muted loop playsinline preload="none" aria-label="A Lis provando armações de grau e de sol na loja"></video>
+              <button class="reel__sound" type="button" aria-label="Ligar o som" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="spk" d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/><path class="off" d="m16 9.5 5 5m0-5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="on" d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+              <figcaption>Armação certa pra cada estilo</figcaption>
+            </figure>
+          <figure class="reel ">
+              <video src="video/olhadinha.mp4" poster="video/olhadinha.jpg" muted loop playsinline preload="none" aria-label="Cliente entrando na loja dizendo que só vai dar uma olhadinha e saindo com sacola"></video>
+              <button class="reel__sound" type="button" aria-label="Ligar o som" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="spk" d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/><path class="off" d="m16 9.5 5 5m0-5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="on" d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+              <figcaption>“Hoje eu só vou dar uma olhadinha.”</figcaption>
+            </figure>
+          <figure class="reel ">
+              <video src="video/sobrinhas.mp4" poster="video/sobrinhas.jpg" muted loop playsinline preload="none" aria-label="As sobrinhas da Lis apresentando a loja e as vitrines"></video>
+              <button class="reel__sound" type="button" aria-label="Ligar o som" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="spk" d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/><path class="off" d="m16 9.5 5 5m0-5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="on" d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+              <figcaption>As sobrinhas fazendo o marketing da loja</figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+
     <!-- CLIENTES -->
     <section class="section" id="clientes">
       <div class="wrap">
@@ -182,8 +220,12 @@
         </header>
 
         <div class="reviews">
-          <figure class="review review--feature reveal">
-            <img src="img/cliente-satisfeito.jpg" alt="Cliente satisfeito usando seus novos óculos escuros" width="580" height="420" loading="lazy">
+          <figure class="reel review review--video reveal">
+              <video src="video/dona-maria.mp4" poster="video/dona-maria.jpg" muted loop playsinline preload="none" aria-label="Depoimento da cliente Dona Maria ao lado da Lis, dentro da loja"></video>
+              <button class="reel__sound" type="button" aria-label="Ligar o som" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="spk" d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/><path class="off" d="m16 9.5 5 5m0-5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="on" d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+              <figcaption>Dona Maria aprovou. Liga o som!</figcaption>
+            </figure>
+          <figure class="review review--quote reveal">
             <blockquote>
               <p>“Atendimento excelente, variedade de modelos e qualidade nos produtos. Fiquei muito satisfeito com a minha escolha!”</p>
             </blockquote>
@@ -192,10 +234,6 @@
           <figure class="review review--photo reveal">
             <img src="img/clientes-familia.jpg" alt="Lis tirando selfie com duas clientes jovens dentro da loja" width="800" height="1111" loading="lazy">
             <figcaption>Gerações de clientes</figcaption>
-          </figure>
-          <figure class="review review--photo reveal">
-            <img src="img/cliente-maravilhoso.jpg" alt="Lis abraçada com uma cliente que segura seus novos óculos" width="800" height="941" loading="lazy">
-            <figcaption>“Sim, maravilhoso!”</figcaption>
           </figure>
         </div>
 
